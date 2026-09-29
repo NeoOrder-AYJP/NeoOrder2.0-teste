@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#59413a", "on-tertiary-container": "#fffbff", "primary-fixed-dim": "#ffb59f", "inverse-on-surface": "#f3f0eb", "on-secondary": "#ffffff", "secondary-container": "#fed7cb", "surface": "#fcf9f4", "surface-container-highest": "#e5e2dd", "error": "#ba1a1a", "error-container": "#ffdad6", "outline": "#8d7168", "surface-variant": "#e5e2dd", "on-secondary-fixed": "#2b160f", "on-surface": "#1c1c19", "tertiary-container": "#a36700", "surface-dim": "#dcdad5", "inverse-surface": "#31302d", "secondary": "#75584e", "on-error": "#ffffff", "on-primary-fixed": "#3a0a00", "surface-container-lowest": "#ffffff", "surface-container": "#f0ede9", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-primary-container": "#fffbff", "outline-variant": "#e2bfb5", "background": "#fcf9f4", "secondary-fixed-dim": "#e4beb3", "surface-container-low": "#f6f3ee", "primary-container": "#ce461a", "on-background": "#1c1c19", "on-tertiary-fixed": "#2a1700", "primary": "#ab2f00", "surface-bright": "#fcf9f4", "on-secondary-container": "#795c52", "on-primary-fixed-variant": "#862300", "tertiary-fixed-dim": "#ffb95f", "secondary-fixed": "#ffdbcf", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#5b4138", "primary-fixed": "#ffdbd1", "inverse-primary": "#ffb59f", "tertiary": "#825100", "surface-tint": "#af3101", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#653e00", "surface-container-high": "#ebe8e3" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-lg": "1.75rem", "space-xs": "0.25rem", "gutter-sm": "0.75rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "margin": "1.5rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Modern minimalist restaurant logo icon featuring an elegant cloche / dish dome combined with subtle culinary flame and fork, warm terracotta orange and deep espresso brown accents, clean vector badge. Design context: - Primary color: #e05326
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X8yuvPn8zn07O5JOP7lnn5HOZ0ZwHoizgHze5Iz37QlhgPK0-sn1V9I6DTT2BRfoMFmkf-gu-tc90lG7xFFCq9JqVnaAoGq-XbfgfZqYRhjWba9YH2UGI1sV4t3RYQgPVBvbt97g9oFr2SQFEahoU9XImuLdij1vNwuINYWcDwCLDh0cpFzGnxIgjKzrmKdebRvvk0JnAsPsTVaxAsh4JGs8fO7gUpiiTMXpJ5SPhrJZELhFSyawTnZdM"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface font-bold leading-none">Sabor &amp; Gestão</span><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm" title="Status LocalStorage Sincronizado"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Local</span></div><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="font-label-sm text-label-sm text-primary font-bold">Mesa 08</span> • Salão Principal</span></div></div><div class="flex items-center gap-space-sm"><div class="flex flex-col items-end hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-bold">Cardápio / Mesa</span><span class="font-label-sm text-label-sm text-on-surface-variant">Turno Noite</span></div><button aria-label="Perfil do Operador" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WV52KmQFA3hXzcGemFuhNQzQEBoUb5iMxCwRPskm8tBljm1EoUVJUXqukxFy9m9xg8YkFYbE3QD-q7weMch6tUvvd2_s6Oy4KZZ6OTunVrdmI5yiOBOEpNNp22Lxlfokok26heh7tT54Fuh3Ow7YhSIdGMAsJxxzWufmRg9o2of7SZ9CwSzfhCqJfZXCErpj8W7i0gA5-X3abaWg5ppWglk_yHq7DZFrUg_uVmpv1iekzTHM3_FOR5zz4"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Status da Mesa & Garçom -->
+<section class="px-margin-mobile pt-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Ocupada
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 1h 24m
+            </span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">Mesa 05</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">person</span>
+            Atendente: <strong class="text-on-surface font-semibold">Mateus Silva</strong>
+</p>
+</div>
+<!-- Botão Chamar Atendente -->
+<button class="flex flex-col items-center justify-center min-w-[76px] h-[68px] px-space-sm bg-primary-fixed hover:bg-primary/20 text-on-primary-fixed rounded-xl transition-all active:scale-[0.96] shadow-sm" id="btn-call-waiter" type="button">
+<div class="relative">
+<span class="material-symbols-outlined text-[24px] text-primary" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm font-bold mt-1 text-primary">Chamar</span>
+</button>
+</div>
+<!-- Quick note / atalhos de chamado -->
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-xs overflow-x-auto no-scrollbar">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Motivo rápido:</span>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-variant active:scale-95 transition-all whitespace-nowrap" onclick="triggerCallAlert('Água ou Gelo')" type="button">
+          💧 Água
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-variant active:scale-95 transition-all whitespace-nowrap" onclick="triggerCallAlert('Talheres ou Pratos')" type="button">
+          🍴 Talheres
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-variant active:scale-95 transition-all whitespace-nowrap" onclick="triggerCallAlert('Ajuda com o Cardápio')" type="button">
+          🙋 Cardápio
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-variant active:scale-95 transition-all whitespace-nowrap" onclick="triggerCallAlert('Pedir a Conta')" type="button">
+          🧾 Conta
+        </button>
+</div>
+</div>
+</section>
+<!-- Filtros Horizontais de Categoria (Pills) -->
+<section class="mt-space-md">
+<div class="flex items-center gap-space-xs px-margin-mobile overflow-x-auto no-scrollbar py-1">
+<button class="category-pill active-pill px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold whitespace-nowrap shadow-sm transition-all" type="button">
+        Todos os Pratos
+      </button>
+<button class="category-pill px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" type="button">
+        Pratos Principais
+      </button>
+<button class="category-pill px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" type="button">
+        Entradas
+      </button>
+<button class="category-pill px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" type="button">
+        Bebidas &amp; Coquetéis
+      </button>
+<button class="category-pill px-space-md py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" type="button">
+        Sobremesas
+      </button>
+</div>
+</section>
+<!-- Lista de Itens do Cardápio -->
+<section class="px-margin-mobile mt-space-md flex flex-col gap-space-md">
+<!-- Item 1: Tornedor de Filé -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm transition-shadow hover:shadow-md">
+<div class="flex gap-space-sm">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Tornedor de filé mignon grelhado com crosta caramelizada, redução de molho roti brilhante em prato cerâmico de alta gastronomia com raminho de tomilho fresco e purê aveludado, iluminação quente de restaurante fino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxiP7PspWWreLhcP_UgmEEqwM132HlV2SLTOAK2Ad50WOiftCph0Pkjm3uK1jUJd48eRJwdR1YWdqIrHQzwDvkvN0iDutLZK7KVcExgQlOK1WYDFjmdjn5DOyo3mm0ZZpxFM9oYFOCZ45INiOae3VWlwb8MiFTb3oqOMibMtw0fu7zaQ_QqlgarICeeYZTVJCrol77-7rCRJu4ZjHFMM2B_qhbWZTuOwqO4X8TrkITDagS40Bt9lIS"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Disp.
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h2 class="font-title-md text-title-md text-on-surface font-bold line-clamp-1">Tornedor de Filé ao Molho Roti</h2>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">R$ 78,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Corte alto de filé mignon grelhado, redução glaceada de roti, mousseline de batata trufada e aspargos.
+            </p>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-2">
+<!-- Quantity Control (Touch Target >= 48px) -->
+<div class="flex items-center bg-surface-container-high rounded-lg p-0.5">
+<button aria-label="Diminuir quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, -1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="item-qty w-6 text-center font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Aumentar quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, 1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-11 min-h-[44px] px-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-[0.98] transition-all" onclick="addItemToDraft('Tornedor de Filé ao Molho Roti', 78.00, this)" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Adicionar
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 2: Risoto de Cogumelos Trufados -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm transition-shadow hover:shadow-md">
+<div class="flex gap-space-sm">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Prato fundo artesanal com risoto cremoso de arroz arbóreo com cogumelos shimeji e porcini dourados, azeite trufado finalizado com lascas generosas de queijo parmesão e brotos frescos, luz suave e aconchegante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATKbdlMv615kxbJ5a6TgCa3AHf0IXcDSXhVOEi94V2IDR9_PzBY84ypNAAfLgYEhE7PAgLcsD5g-bCVRAgz5h415qTJFwgDw_AeZL-0Fmkbsq1Y8Pu6AjOkL5ypC0XKAXppKz0y_BKc-EyWZIB5mQjqVtVTkGX_HuyxnLe6Z0BhhtsGatSnTbxo04lYDXmB8JByJWj7Zh-fc1KUU4X7xjSIR12ss9Nx68exzBr0xJtDD3IpjGUGN8n"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Disp.
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h2 class="font-title-md text-title-md text-on-surface font-bold line-clamp-1">Risoto de Cogumelos Trufados</h2>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">R$ 64,50</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Arroz carnaroli al dente, cogumelos frescos salteados no vinho branco, grana padano e azeite trufado.
+            </p>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-2">
+<div class="flex items-center bg-surface-container-high rounded-lg p-0.5">
+<button aria-label="Diminuir quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, -1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="item-qty w-6 text-center font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Aumentar quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, 1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-11 min-h-[44px] px-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-[0.98] transition-all" onclick="addItemToDraft('Risoto de Cogumelos Trufados', 64.50, this)" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Adicionar
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 3: Polvo Grelhado com Páprica (Esgotado / 86'd - RF-14) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm opacity-60 relative">
+<div class="flex gap-space-sm">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-high relative grayscale">
+<img class="w-full h-full object-cover" data-alt="Tentáculos de polvo grelhado com marcas de brasa, batatas ao murro douradas, azeite de páprica defumada e flor de sal servido em cerâmica escura, prato de restaurante rústico sofisticado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv9Vu-cDEL-eWHogZoWsMKkyo4rbOa5_7cGB9T7-fGFsdxoJZfLNYu7Pi6jArwxwwth9VT8nFThtxMrxqQl5RPbFDFsDpQXsDil_KnXW2qH4uk4T_fc_8V-jX6ST9H-1S0yzmI6g_cf6uljJmXcBi-Fw3pxu0tz2oV140zUgSNijqz9mS809uEGdfjoAf387JHKEhjjkImuQTB-GkqoA1DtMMUCoGziiWUv1JdFP6t8stFKbWM86dy"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-error/90 backdrop-blur-md text-on-error font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span> Esgotado
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h2 class="font-title-md text-title-md text-on-surface-variant font-bold line-clamp-1">Polvo Grelhado com Páprica</h2>
+<span class="font-title-md text-title-md text-on-surface-variant font-bold whitespace-nowrap line-through">R$ 96,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Tentáculo tenro de polvo braseado, batatas ao murro com alho confitado e emulsão de páprica doce.
+            </p>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-2">
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">block</span> Item esgotado na cozinha
+            </span>
+<button class="h-11 min-h-[44px] px-space-md bg-surface-container-highest text-on-surface-variant/50 rounded-lg font-label-md text-label-md font-bold cursor-not-allowed" disabled="" type="button">
+              Indisponível
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 4: Ceviche Clássico de Robalo -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm transition-shadow hover:shadow-md">
+<div class="flex gap-space-sm">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Ceviche de robalo fresco cortado em cubos perfeitos, leite de tigre límpido com cebola roxa fininha fatiada, milho crocante chulpe e folhas de coentro frescas em tigela rústica, visual cítrico e vibrante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1GzSCo_YT6G37QGSNWUYOfn2GtsYzj_en5jHDJ8uhdZbTZFS4MqHGUtFbUIPdAc2DVGD4Y0BkIWXsAE9MpBJdJxm_XZ0_rLyXDFPuOXTiCoYO0Yc8L_jdt33DeUAW5G-2TyVKiBYwpbqRuACTZX5qgjZjvVxYEoS0e5YF5pEl2u01QBotPF3jZaGPoRpNGmt18pAmOKmh_XtXT80z966XlFRFusbRMauAuUgATeD_eSgKQiVs5dd"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Disp.
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h2 class="font-title-md text-title-md text-on-surface font-bold line-clamp-1">Ceviche Clássico de Robalo</h2>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">R$ 42,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Cubos de peixe branco fresco marinados no leche de tigre cítrico, cebola roxa, milho crocante e batata doce.
+            </p>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-2">
+<div class="flex items-center bg-surface-container-high rounded-lg p-0.5">
+<button aria-label="Diminuir quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, -1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="item-qty w-6 text-center font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Aumentar quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, 1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-11 min-h-[44px] px-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-[0.98] transition-all" onclick="addItemToDraft('Ceviche Clássico de Robalo', 42.00, this)" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Adicionar
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Item 5: Gin Tônica Tangerina & Alecrim -->
+<article class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm transition-shadow hover:shadow-md">
+<div class="flex gap-space-sm">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Taça balloon de cristal elegante com drink gin tônica com rodelas desidratadas de tangerina, ramo de alecrim fresco aromático defumado e pedras translúcidas de gelo com bolhas de água tônica, bar sofisticado ao fundo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZgkRUPNAJJhl6G4R2ZROICvbykUHJv3KGW13VIgh44GDmT8tel1Ttmm25fkftNRlU_-ry2zQfcV0ECOk6U24m_owiMcpyo2R-oXLZ36FB8reySK9kDbgeDo6PfCLHvbc3AdHyWbWo9sctvTUTq6urJr-Rqckq2DSVqNiJxRvZ-Rc1Vqm-kyOCYGEpkmzLZSrMdHXaFgyzmAX0UwwtWxNsr4GBOv9QilwdInOZxrDhII5FFtQK8psv"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-md text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Disp.
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h2 class="font-title-md text-title-md text-on-surface font-bold line-clamp-1">Gin Tônica Tangerina &amp; Alecrim</h2>
+<span class="font-title-md text-title-md text-primary font-bold whitespace-nowrap">R$ 32,00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Gin artesanal infusionado, tônica premium botânica, xarope suave de tangerina e alecrim chamuscado.
+            </p>
+</div>
+<div class="flex items-center justify-between gap-space-sm mt-2">
+<div class="flex items-center bg-surface-container-high rounded-lg p-0.5">
+<button aria-label="Diminuir quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, -1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="item-qty w-6 text-center font-label-md text-label-md font-bold text-on-surface">1</span>
+<button aria-label="Aumentar quantidade" class="w-10 h-10 min-w-[40px] flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 font-bold transition-all" onclick="adjustQty(this, 1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-11 min-h-[44px] px-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm active:scale-[0.98] transition-all" onclick="addItemToDraft('Gin Tônica Tangerina &amp; Alecrim', 32.00, this)" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Adicionar
+            </button>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Seção Expansível / Gaveta de Comanda da Mesa 05 -->
+<section class="px-margin-mobile mt-space-lg mb-20">
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<!-- Cabeçalho Acordeon da Comanda -->
+<button class="w-full px-space-md py- space-sm py-3.5 bg-surface-container flex items-center justify-between text-left active:bg-surface-container-high transition-colors" id="toggle-comanda-btn" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">receipt_long</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-bold">Comanda da Mesa 05</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">3 itens já lançados</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">R$ 216,15</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300" id="comanda-chevron">expand_less</span>
+</div>
+</button>
+<!-- Conteúdo da Comanda -->
+<div class="p-space-md flex flex-col gap-space-md" id="comanda-body">
+<!-- Lista de Pedidos Já Enviados com Status de Cozinha -->
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface-variant tracking-wider uppercase">Histórico de Pedidos</span>
+<div class="mt-space-xs flex flex-col gap-space-xs">
+<!-- Item 1 Comanda: Em Preparo -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">1x</span>
+<div class="min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Tornedor de Filé ao Molho Roti</h3>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px] animate-spin">skillet</span>
+<span>Em preparo • há 12 min</span>
+</div>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold whitespace-nowrap">R$ 78,00</span>
+</div>
+<!-- Item 2 Comanda: Entregue -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">2x</span>
+<div class="min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Gin Tônica Tangerina &amp; Alecrim</h3>
+<div class="flex items-center gap-1 text-emerald-700 font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+<span>Entregue na mesa</span>
+</div>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold whitespace-nowrap">R$ 64,00</span>
+</div>
+<!-- Item 3 Comanda: Entregue -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">1x</span>
+<div class="min-w-0">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Risoto de Cogumelos Trufados</h3>
+<div class="flex items-center gap-1 text-emerald-700 font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+<span>Entregue na mesa</span>
+</div>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold whitespace-nowrap">R$ 64,50</span>
+</div>
+</div>
+</div>
+<!-- Itens no Carrinho / Novo Envio Imediato -->
+<div class="hidden" id="new-items-box">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary tracking-wider uppercase flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Novos itens selecionados
+            </span>
+<button class="font-label-sm text-label-sm text-error font-bold hover:underline" onclick="clearDraft()" type="button">Limpar</button>
+</div>
+<div class="mt-space-xs flex flex-col gap-space-xs" id="new-items-list">
+<!-- Renderizado dinamicamente via JS -->
+</div>
+</div>
+<!-- Totais e Serviço Sugerido -->
+<div class="pt-space-xs flex flex-col gap-1">
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Subtotal de consumo</span>
+<span id="label-subtotal">R$ 206,50</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+              Taxa de serviço sugerida (10%)
+              <span class="material-symbols-outlined text-[14px] text-tertiary" title="Opcional">info</span>
+</span>
+<span id="label-service">R$ 20,65</span>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Total da Mesa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="label-grand-total">R$ 227,15</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-right">O pagamento pode ser solicitado direto ao garçom</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Barra Flutuante de Confirmação de Novo Pedido (Docked Bottom Strip) -->
+<div class="fixed bottom-20 left-0 w-full px-margin-mobile z-40 transition-transform duration-300 translate-y-28 pointer-events-none" id="floating-action-bar">
+<div class="max-w-md mx-auto pointer-events-auto">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3.5 px-space-md rounded-xl shadow-xl flex items-center justify-between active:scale-[0.98] transition-all" id="btn-submit-order" onclick="confirmKitchenOrder()" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-white/20 text-on-primary flex items-center justify-center font-bold text-xs" id="draft-count-badge">0</span>
+<span class="font-label-lg text-label-lg font-bold">Enviar à Cozinha</span>
+</div>
+<span class="font-title-md text-title-md font-bold" id="draft-total-price">R$ 0,00</span>
+</button>
+</div>
+</div>
+<!-- Modal / Bottom Sheet de Chamar Atendente -->
+<div class="fixed inset-0 z-50 bg-[#29150E]/40 backdrop-blur-sm flex items-end sm:items-center justify-center p-margin-mobile transition-opacity duration-300 opacity-0 pointer-events-none" id="call-modal">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-2xl p-space-lg shadow-2xl flex flex-col gap-space-md relative transform transition-transform duration-300 translate-y-10">
+<!-- Top amber bar -->
+<div class="w-12 h-1.5 bg-primary rounded-full mx-auto -mt-1 sm:hidden"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">concierge</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Chamar Garçom</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mesa 05 • Mateus Silva</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container" onclick="closeCallModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Como podemos te atender?</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="reason-btn px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-secondary-container active:scale-95 transition-all" onclick="selectCallReason(this, 'Pedir a Conta')" type="button">
+            Pedir Conta
+          </button>
+<button class="reason-btn px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-secondary-container active:scale-95 transition-all" onclick="selectCallReason(this, 'Água / Gelo')" type="button">
+            Água / Gelo
+          </button>
+<button class="reason-btn px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-secondary-container active:scale-95 transition-all" onclick="selectCallReason(this, 'Novo Pedido')" type="button">
+            Novo Pedido
+          </button>
+<button class="reason-btn px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-secondary-container active:scale-95 transition-all" onclick="selectCallReason(this, 'Outra Dúvida')" type="button">
+            Outra Dúvida
+          </button>
+</div>
+<input class="mt-2 w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary/40" id="call-custom-note" placeholder="Mensagem rápida (opcional)..." type="text"/>
+</div>
+<div class="flex gap-space-sm pt-1">
+<button class="flex-1 py-3 px-space-sm rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-bold active:scale-95 transition-all" onclick="closeCallModal()" type="button">
+          Cancelar
+        </button>
+<button class="flex-1 py-3 px-space-sm rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md active:scale-95 transition-all flex items-center justify-center gap-1" onclick="sendWaiterCall()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span> Chamar
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast de Notificação -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-2.5 rounded-full shadow-lg flex items-center gap-2 pointer-events-none transition-all duration-300 opacity-0 -translate-y-4" id="toast-alert">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Chamado enviado ao garçom!</span>
+</div>
+</div>
+<script>
+  // Estado local simplificado da mesa
+  const draftCart = [];
+  let baseConsumption = 206.50; // Total anterior lançado
+
+  function adjustQty(btn, delta) {
+    const container = btn.parentElement;
+    const qtySpan = container.querySelector('.item-qty');
+    let cur = parseInt(qtySpan.textContent) || 1;
+    cur = Math.max(1, Math.min(10, cur + delta));
+    qtySpan.textContent = cur;
+  }
+
+  function addItemToDraft(name, price, btn) {
+    const card = btn.closest('article');
+    const qtySpan = card ? card.querySelector('.item-qty') : null;
+    const qty = qtySpan ? parseInt(qtySpan.textContent) : 1;
+
+    const existing = draftCart.find(item => item.name === name);
+    if (existing) {
+      existing.qty += qty;
+    } else {
+      draftCart.push({ name, price, qty });
+    }
+
+    // Reset seletor para 1
+    if (qtySpan) qtySpan.textContent = "1";
+
+    // Feedback tátil no botão
+    const origHTML = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">check</span> Adicionado`;
+    btn.classList.add('bg-emerald-700');
+    setTimeout(() => {
+      btn.innerHTML = origHTML;
+      btn.classList.remove('bg-emerald-700');
+    }, 1200);
+
+    updateDraftUI();
+    showToast(`Adicionado: ${qty}x ${name}`);
+  }
+
+  function updateDraftUI() {
+    const bar = document.getElementById('floating-action-bar');
+    const countBadge = document.getElementById('draft-count-badge');
+    const priceDisplay = document.getElementById('draft-total-price');
+    const newItemsBox = document.getElementById('new-items-box');
+    const newItemsList = document.getElementById('new-items-list');
+
+    const totalQty = draftCart.reduce((sum, i) => sum + i.qty, 0);
+    const draftTotal = draftCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+
+    if (totalQty > 0) {
+      bar.classList.remove('translate-y-28');
+      countBadge.textContent = totalQty;
+      priceDisplay.textContent = `R$ ${draftTotal.toFixed(2).replace('.', ',')}`;
+
+      // Renderiza na gaveta
+      newItemsBox.classList.remove('hidden');
+      newItemsList.innerHTML = draftCart.map(item => `
+        <div class="p-space-sm bg-primary-fixed/20 rounded-lg flex items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-xs min-w-0">
+            <span class="font-label-md text-label-md font-bold text-primary">${item.qty}x</span>
+            <span class="font-label-lg text-label-lg text-on-surface truncate">${item.name}</span>
+          </div>
+          <span class="font-label-lg text-label-lg text-primary font-bold whitespace-nowrap">R$ ${(item.price * item.qty).toFixed(2).replace('.', ',')}</span>
+        </div>
+      `).join('');
+    } else {
+      bar.classList.add('translate-y-28');
+      newItemsBox.classList.add('hidden');
+      newItemsList.innerHTML = '';
+    }
+
+    // Atualiza totais com rascunho
+    const grandSubtotal = baseConsumption + draftTotal;
+    const serviceCharge = grandSubtotal * 0.10;
+    const finalTotal = grandSubtotal + serviceCharge;
+
+    document.getElementById('label-subtotal').textContent = `R$ ${grandSubtotal.toFixed(2).replace('.', ',')}`;
+    document.getElementById('label-service').textContent = `R$ ${serviceCharge.toFixed(2).replace('.', ',')}`;
+    document.getElementById('label-grand-total').textContent = `R$ ${finalTotal.toFixed(2).replace('.', ',')}`;
+  }
+
+  function clearDraft() {
+    draftCart.length = 0;
+    updateDraftUI();
+    showToast('Novos itens removidos');
+  }
+
+  function confirmKitchenOrder() {
+    if (draftCart.length === 0) return;
+    showToast('Pedido enviado para a cozinha com sucesso!');
+    // Incorpora no total base e esvazia rascunho
+    const draftTotal = draftCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+    baseConsumption += draftTotal;
+    draftCart.length = 0;
+    updateDraftUI();
+  }
+
+  // Toggle Gaveta da Comanda
+  const toggleBtn = document.getElementById('toggle-comanda-btn');
+  const comandaBody = document.getElementById('comanda-body');
+  const comandaChevron = document.getElementById('comanda-chevron');
+
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = comandaBody.classList.toggle('hidden');
+    comandaChevron.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+  });
+
+  // Modal Chamado do Garçom
+  const modal = document.getElementById('call-modal');
+  const btnCallWaiter = document.getElementById('btn-call-waiter');
+  let selectedReason = 'Ajuda no cardápio';
+
+  function openCallModal() {
+    modal.classList.remove('pointer-events-none', 'opacity-0');
+    modal.querySelector('div').classList.remove('translate-y-10');
+  }
+
+  function closeCallModal() {
+    modal.classList.add('pointer-events-none', 'opacity-0');
+    modal.querySelector('div').classList.add('translate-y-10');
+  }
+
+  btnCallWaiter.addEventListener('click', openCallModal);
+
+  function selectCallReason(btn, reason) {
+    document.querySelectorAll('.reason-btn').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary');
+      b.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary');
+    selectedReason = reason;
+  }
+
+  function triggerCallAlert(reason) {
+    showToast(`Garçom Mateus chamado para: ${reason}`);
+  }
+
+  function sendWaiterCall() {
+    const custom = document.getElementById('call-custom-note').value;
+    const finalReason = custom ? `${selectedReason} (${custom})` : selectedReason;
+    closeCallModal();
+    showToast(`Chamado enviado a Mateus: ${finalReason}`);
+    document.getElementById('call-custom-note').value = '';
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast-alert');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = msg;
+    toast.classList.remove('opacity-0', '-translate-y-4');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-4');
+    }, 2800);
+  }
+
+  // Interação dos filtros de categoria
+  document.querySelectorAll('.category-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.category-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'font-bold');
+        p.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      pill.classList.add('bg-primary', 'text-on-primary', 'font-bold');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(41,21,14,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-margin-mobile"><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-all active:scale-[0.98]" data-path="cardapio-mesa" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight text-center">Cardápio / Mesa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-all active:scale-[0.98]" data-path="painel-atendente" href="#"><span class="material-symbols-outlined text-[24px]">concierge</span><span class="font-label-sm text-label-sm tracking-tight text-center">Painel Atendente</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-all active:scale-[0.98]" data-path="gestao-kpis" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-sm text-label-sm tracking-tight text-center">Gestão &amp; KPIs</span></a></div></nav></body></html>

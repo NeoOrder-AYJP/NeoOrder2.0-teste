@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#59413a", "on-tertiary-container": "#fffbff", "primary-fixed-dim": "#ffb59f", "inverse-on-surface": "#f3f0eb", "on-secondary": "#ffffff", "secondary-container": "#fed7cb", "surface": "#fcf9f4", "surface-container-highest": "#e5e2dd", "error": "#ba1a1a", "error-container": "#ffdad6", "outline": "#8d7168", "surface-variant": "#e5e2dd", "on-secondary-fixed": "#2b160f", "on-surface": "#1c1c19", "tertiary-container": "#a36700", "surface-dim": "#dcdad5", "inverse-surface": "#31302d", "secondary": "#75584e", "on-error": "#ffffff", "on-primary-fixed": "#3a0a00", "surface-container-lowest": "#ffffff", "surface-container": "#f0ede9", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-primary-container": "#fffbff", "outline-variant": "#e2bfb5", "background": "#fcf9f4", "secondary-fixed-dim": "#e4beb3", "surface-container-low": "#f6f3ee", "primary-container": "#ce461a", "on-background": "#1c1c19", "on-tertiary-fixed": "#2a1700", "primary": "#ab2f00", "surface-bright": "#fcf9f4", "on-secondary-container": "#795c52", "on-primary-fixed-variant": "#862300", "tertiary-fixed-dim": "#ffb95f", "secondary-fixed": "#ffdbcf", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#5b4138", "primary-fixed": "#ffdbd1", "inverse-primary": "#ffb59f", "tertiary": "#825100", "surface-tint": "#af3101", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#653e00", "surface-container-high": "#ebe8e3" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin-mobile": "1rem", "gutter": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-lg": "1.75rem", "space-xs": "0.25rem", "gutter-sm": "0.75rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "margin": "1.5rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Modern minimalist restaurant logo icon featuring an elegant cloche / dish dome combined with subtle culinary flame and fork, warm terracotta orange and deep espresso brown accents, clean vector badge. Design context: - Primary color: #e05326
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X8yuvPn8zn07O5JOP7lnn5HOZ0ZwHoizgHze5Iz37QlhgPK0-sn1V9I6DTT2BRfoMFmkf-gu-tc90lG7xFFCq9JqVnaAoGq-XbfgfZqYRhjWba9YH2UGI1sV4t3RYQgPVBvbt97g9oFr2SQFEahoU9XImuLdij1vNwuINYWcDwCLDh0cpFzGnxIgjKzrmKdebRvvk0JnAsPsTVaxAsh4JGs8fO7gUpiiTMXpJ5SPhrJZELhFSyawTnZdM"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface font-bold leading-none">Sabor &amp; Gestão</span><span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm" title="Status LocalStorage Sincronizado"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Local</span></div><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="font-label-sm text-label-sm text-primary font-bold">Mesa 08</span> • Salão Principal</span></div></div><div class="flex items-center gap-space-sm"><div class="flex flex-col items-end hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-bold">Painel Atendente</span><span class="font-label-sm text-label-sm text-on-surface-variant">Turno Noite</span></div><button aria-label="Perfil do Operador" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WV52KmQFA3hXzcGemFuhNQzQEBoUb5iMxCwRPskm8tBljm1EoUVJUXqukxFy9m9xg8YkFYbE3QD-q7weMch6tUvvd2_s6Oy4KZZ6OTunVrdmI5yiOBOEpNNp22Lxlfokok26heh7tT54Fuh3Ow7YhSIdGMAsJxxzWufmRg9o2of7SZ9CwSzfhCqJfZXCErpj8W7i0gA5-X3abaWg5ppWglk_yHq7DZFrUg_uVmpv1iekzTHM3_FOR5zz4"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl space-y-space-md">
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Turno Noturno</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Salão 1</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-highest rounded-full text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">timer</span>
+<span>Tempo Médio: <strong class="text-on-surface font-title-md text-title-md">14 min</strong></span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm pt-space-xs">
+<button class="flex-1 flex items-center justify-center gap-1.5 min-h-[44px] px-space-sm py-2 rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md active:scale-[0.98] transition-all" id="soundToggleBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" id="soundIcon" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span id="soundLabel">Sons: Ativados</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 min-h-[44px] px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md active:scale-[0.98] transition-all" id="newOrderBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Novo Pedido</span>
+</button>
+</div>
+</div>
+<section aria-label="Chamados de Mesas" class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[22px]">notification_important</span>
+<h2 class="font-title-md text-title-md text-on-surface">Chamados de Mesas</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm" id="pendingAlertsCount">2 ativos</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Prioridade Máxima</span>
+</div>
+<div class="flex flex-col space-y-space-sm" id="alertsContainer">
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md" id="alert-m05">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed font-headline-sm text-headline-sm">
+              05
+            </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mesa 05</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span> há 3 min • Garçom Lucas
+              </span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">local_bar</span> Bebidas &amp; Serviço
+          </span>
+</div>
+<div class="my-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md">
+          "Precisa de <strong>água mineral sem gás</strong> e <strong>2 taças limpas</strong> com urgência."
+        </div>
+<button class="w-full flex items-center justify-center gap-2 min-h-[48px] px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg active:scale-[0.98] transition-transform" onclick="resolveCall('alert-m05', 'Mesa 05')" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>✓ Marcar como Atendido</span>
+</button>
+</div>
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md" id="alert-m12">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm">
+              12
+            </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mesa 12</span>
+<span class="text-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> há 7 min • Conta Solicitada
+              </span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">credit_card</span> Fechamento
+          </span>
+</div>
+<div class="my-space-sm p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md">
+          "Fechamento de conta. Levar <strong>máquina de cartão</strong> (Débito Visa / Vale-refeição)."
+        </div>
+<button class="w-full flex items-center justify-center gap-2 min-h-[48px] px-space-md py-2.5 rounded-xl bg-on-surface text-surface-container-lowest font-label-lg text-label-lg active:scale-[0.98] transition-transform" onclick="resolveCall('alert-m12', 'Mesa 12')" type="button">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+<span>✓ Marcar como Atendido</span>
+</button>
+</div>
+</div>
+</section>
+<section aria-label="KDS Mobile" class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[22px]">soup_kitchen</span>
+<h2 class="font-title-md text-title-md text-on-surface">Pedidos da Cozinha</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sincronizado ao vivo</span>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 -mx-margin-mobile px-margin-mobile" role="tablist">
+<button class="tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap" onclick="filterTab('all', this)" type="button">
+<span>Todos</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">8</span>
+</button>
+<button class="tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm" onclick="filterTab('prontos', this)" type="button">
+<span>Prontos</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">2</span>
+</button>
+<button class="tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap" onclick="filterTab('preparo', this)" type="button">
+<span>Em Preparo</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">2</span>
+</button>
+<button class="tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap" onclick="filterTab('recebidos', this)" type="button">
+<span>Recebidos</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">3</span>
+</button>
+<button class="tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap" onclick="filterTab('entregues', this)" type="button">
+<span>Entregues</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">1</span>
+</button>
+</div>
+<div class="flex flex-col space-y-space-md" id="ordersList">
+<article class="order-card flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-sm" data-stage="prontos">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-11 h-11 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shadow-sm">
+              07
+            </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mesa 07 • Pedido #1084</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garçom Matheus</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+              Pronto no Passe
+            </span>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-1">Passage: 2 min • Aquecedor ativo</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex justify-between items-baseline">
+<span class="font-title-md text-title-md text-on-surface">2x Filé au Poivre com Aligot</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">R$ 198,00</span>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Ao Ponto para Mal</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Sem cebola crisp</span>
+</div>
+</div>
+<button class="w-full min-h-[48px] flex items-center justify-center gap-2 px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-all" onclick="advanceOrder(this, 'Entregue com Sucesso!')" type="button">
+<span class="material-symbols-outlined text-[20px]">room_service</span>
+<span>Confirmar Entrega na Mesa</span>
+</button>
+</article>
+<article class="order-card flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm" data-stage="preparo">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-high text-on-surface font-headline-sm text-headline-sm">
+              08
+            </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mesa 08 • Pedido #1081</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garçom Lucas</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">skillet</span> Em Preparo
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tempo de fogo: 12 min</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex justify-between items-baseline">
+<span class="font-body-md text-body-md text-on-surface">1x Polvo Grelhado com Batatas Rústicas</span>
+<span class="font-body-md text-body-md text-on-surface">R$ 112,00</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-md text-body-md text-on-surface">1x Risoto de Cogumelos Selvagens</span>
+<span class="font-body-md text-body-md text-on-surface">R$ 84,00</span>
+</div>
+</div>
+<button class="w-full min-h-[46px] flex items-center justify-center gap-2 px-space-md py-2 rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md active:scale-[0.98] transition-all" onclick="advanceOrder(this, 'Pedido no Passe!')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Marcar como Pronto</span>
+</button>
+</article>
+<article class="order-card flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm" data-stage="recebidos">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container text-on-surface font-headline-sm text-headline-sm">
+              05
+            </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mesa 05 • Pedido #1086</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Garçom Lucas</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span> Recebido
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">há 4 min</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1 bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex justify-between items-baseline">
+<span class="font-body-md text-body-md text-on-surface">1x Ancho Angus Prime (350g)</span>
+<span class="font-body-md text-body-md text-on-surface">R$ 96,00</span>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Ao Ponto</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Molho chimichurri à parte</span>
+</div>
+</div>
+<button class="w-full min-h-[46px] flex items-center justify-center gap-2 px-space-md py-2 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-[0.98] transition-all" onclick="advanceOrder(this, 'Preparo Iniciado!')" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">play_arrow</span>
+<span>Iniciar Preparo</span>
+</button>
+</article>
+</div>
+</section>
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-3 rounded-full bg-on-surface text-surface-container-lowest shadow-xl transition-all duration-300 opacity-0 pointer-events-none translate-y-3" id="toastNotification">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Ação concluída com sucesso!</span>
+</div>
+</div>
+<script>
+  let soundsActive = true;
+
+  const soundBtn = document.getElementById('soundToggleBtn');
+  const soundIcon = document.getElementById('soundIcon');
+  const soundLabel = document.getElementById('soundLabel');
+
+  if (soundBtn) {
+    soundBtn.addEventListener('click', () => {
+      soundsActive = !soundsActive;
+      if (soundsActive) {
+        soundIcon.textContent = 'volume_up';
+        soundIcon.className = 'material-symbols-outlined text-[18px] text-primary';
+        soundLabel.textContent = 'Sons: Ativados';
+        triggerToast('Notificações sonoras ligadas');
+      } else {
+        soundIcon.textContent = 'volume_off';
+        soundIcon.className = 'material-symbols-outlined text-[18px] text-on-surface-variant';
+        soundLabel.textContent = 'Sons: Silenciados';
+        triggerToast('Notificações sonoras desativadas');
+      }
+    });
+  }
+
+  const newOrderBtn = document.getElementById('newOrderBtn');
+  if (newOrderBtn) {
+    newOrderBtn.addEventListener('click', () => {
+      triggerToast('Abertura rápida: selecione a mesa no salão');
+    });
+  }
+
+  function resolveCall(cardId, mesa) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    
+    card.classList.add('opacity-40', 'scale-[0.98]');
+    setTimeout(() => {
+      card.remove();
+      const countEl = document.getElementById('pendingAlertsCount');
+      const container = document.getElementById('alertsContainer');
+      const remaining = container ? container.querySelectorAll('div[id^="alert-"]').length : 0;
+      
+      if (countEl) {
+        countEl.textContent = remaining + (remaining === 1 ? ' ativo' : ' ativos');
+      }
+
+      if (remaining === 0 && container) {
+        container.innerHTML = `
+          <div class="flex items-center justify-center p-space-md rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+            <span class="material-symbols-outlined text-primary text-[20px] mr-2">done_all</span>
+            Nenhum chamado pendente no salão neste instante.
+          </div>
+        `;
+      }
+      triggerToast(mesa + ' atendida');
+    }, 200);
+  }
+
+  function advanceOrder(button, feedbackMessage) {
+    const originalText = button.innerHTML;
+    button.disabled = true;
+    button.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Gravando...';
+    
+    setTimeout(() => {
+      button.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span> ' + feedbackMessage;
+      button.classList.remove('bg-primary');
+      button.classList.add('bg-surface-container-high', 'text-on-surface');
+      triggerToast(feedbackMessage);
+    }, 400);
+  }
+
+  function filterTab(filter, button) {
+    document.querySelectorAll('.tab-pill').forEach(btn => {
+      btn.className = 'tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-md text-label-md whitespace-nowrap';
+    });
+    button.className = 'tab-pill flex items-center gap-1 min-h-[40px] px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm';
+
+    const cards = document.querySelectorAll('.order-card');
+    cards.forEach(card => {
+      const stage = card.getAttribute('data-stage');
+      if (filter === 'all' || stage === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    if (!toast || !toastMsg) return;
+
+    toastMsg.textContent = message;
+    toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+    }, 2400);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(41,21,14,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-margin-mobile"><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-all active:scale-[0.98]" data-path="cardapio-mesa" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight text-center">Cardápio / Mesa</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm transition-all active:scale-[0.98] text-primary font-bold" data-path="painel-atendente" href="#"><span class="material-symbols-outlined text-[24px]">concierge</span><span class="font-label-sm text-label-sm tracking-tight text-center">Painel Atendente</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-sm text-on-surface-variant hover:text-on-surface transition-all active:scale-[0.98]" data-path="gestao-kpis" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-sm text-label-sm tracking-tight text-center">Gestão &amp; KPIs</span></a></div></nav></body></html>
